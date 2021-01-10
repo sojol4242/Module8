@@ -7,7 +7,6 @@
 
 body {
     max-width: 1300px;
-    width: 100%;
     margin: 0 auto;
     padding: 50px 100px;
     font-family: 'Poppins', sans-serif;
@@ -65,7 +64,7 @@ section {
 
 .course_info,
 .course_details {
-    margin: .6rem;
+    margin: .6rem 0;
 }
 
 .course_details {
@@ -76,7 +75,7 @@ section {
 
 .course_info>h2,
 .course_info>p {
-    margin: .6rem 0;
+    margin: .1rem 0;
     padding: 0 2rem;
 }
 
@@ -130,7 +129,7 @@ a {
     margin-top: 2rem;
 }
 
-@media only screen and (max-width:980px) {
+@media only screen and (max-width:1020px) {
     .courses {
         grid-template-columns: repeat(2, 1fr);
         grid-row: auto;
@@ -152,18 +151,35 @@ a {
     }
 }
 
-@media only screen and (max-width:600px) {
+@media only screen and (max-width:550px) {
     .courses {
-        display: flex;
-        flex-direction: column;
-        justify-self: center;
-        align-items: center;
+        grid-template-columns: 1fr;
+        grid-row: auto;
+        place-items: center;
+    }
+    .course {
+        width: 100%;
     }
     .course_details {
         flex-direction: column;
     }
+}
+
+@media only screen and (max-width:450px) {
+    .courses {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
     .course {
         width: 100%;
+    }
+    .course_details {
+        flex-direction: column;
+    }
+    .course_info {
+        width: 100%;
+        text-align: start;
     }
 }
 
