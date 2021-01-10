@@ -100,6 +100,10 @@ a {
     color: chocolate;
 }
 
+.ratings {
+    margin-top: 1.7rem;
+}
+
 .ratings .filled {
     color: rgb(253, 143, 39)
 }
@@ -129,7 +133,7 @@ a {
     margin-top: 2rem;
 }
 
-@media only screen and (max-width:1020px) {
+@media only screen and (max-width:990px) {
     .courses {
         grid-template-columns: repeat(2, 1fr);
         grid-row: auto;
@@ -165,21 +169,16 @@ a {
     }
 }
 
-@media only screen and (max-width:450px) {
-    .courses {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
+@media only screen and (max-width:410px) {
+    body {
+        min-width: 410px;
     }
-    .course {
-        width: 100%;
+    .courses {
+        grid-template-columns: 1fr;
+        grid-row: auto;
     }
     .course_details {
         flex-direction: column;
-    }
-    .course_info {
-        width: 100%;
-        text-align: start;
     }
 }
 
