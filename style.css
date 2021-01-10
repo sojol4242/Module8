@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;600;700;800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 50px 100px;
+    font-family: 'Poppins', sans-serif;
+}
+
+section {
+    margin: 0 auto;
+}
+
+.title {
+    text-align: center;
+    padding: 2rem;
+    font-size: 2.5rem;
+}
+
+.title span {
+    color: #006372;
+    font-size: 2.5rem;
+}
+
+.courses {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1.5rem;
+    grid-row: auto;
+    place-items: center;
+    background: linear-gradient(75deg, #eb3349, #f45c43);
+    padding: 5rem 2rem;
+    border-radius: 18px;
+    width: 100%;
+}
+
+.course {
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    ;
+    border-radius: 18px;
+    transition: transform .7s ease-in-out;
+    background: linear-gradient(#f1d7da, #ffffff);
+}
+
+.course:hover {
+    transform: scale(.9);
+    cursor: pointer;
+}
+
+.course_image img {
+    width: 100%;
+    height: 10em;
+}
+
+.react_native {
+    border-radius: 15px;
+}
+
+.course_info,
+.course_details {
+    margin: .6rem;
+}
+
+.course_details {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 2rem;
+}
+
+.course_info>h2,
+.course_info>p {
+    margin: .6rem 0;
+    padding: 0 2rem;
+}
+
+.course_info h2 {
+    font-size: 1.1rem;
+    color: #720039;
+}
+
+.course_info {
+    text-align: center;
+}
+
+.course_info p {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    margin-left: .8rem;
+    font-size: 1.1rem;
+    color: chocolate;
+}
+
+.ratings .filled {
+    color: rgb(253, 143, 39)
+}
+
+.ratings .unfilled {
+    color: rgb(195, 195, 195);
+}
+
+.timing p {
+    font-weight: 500;
+    margin-left: .8rem;
+}
+
+.out_btn {
+    padding: 3px 15px;
+    background: rgb(0, 0, 0);
+    border-radius: 16px;
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    margin: 1rem 0;
+}
+
+.timing .clock {
+    color: rgb(253, 143, 39);
+    margin-top: 2rem;
+}
+
+@media only screen and (max-width:980px) {
+    .courses {
+        grid-template-columns: repeat(2, 1fr);
+        grid-row: auto;
+        place-items: center;
+    }
+}
+
+@media only screen and (max-width:780px) {
+    .courses {
+        grid-template-columns: 1fr;
+        grid-row: auto;
+        place-items: center;
+    }
+    .course_details {
+        flex-direction: column;
+    }
+    .course {
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .courses {
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        align-items: center;
+    }
+    .course_details {
+        flex-direction: column;
+    }
+    .course {
+        width: 100%;
+    }
+}
+
+
+/*photo frame  */
+
+
+/* .container {
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        gap: 10px;
+    }
+    
+    .photo-frame {
+        height: 200px;
+        width: 300px;
+        border: 10px solid rgb(240, 176, 14);
+        border-radius: 10px;
+        padding: 10px;
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+    }
+    
+    .photo-frame .photo img {
+        width: 100%;
+        height: 200px;
+    }
+    
+    .des {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        display: none;
+    }
+    
+    .photo-frame:hover .des {
+        display: block;
+        color: honeydew;
+        height: 90%;
+        font-weight: 500;
+        background: rgba(112, 109, 109, 0.527);
+    }
+    
+    .photo-frame:hover .photo img {
+        transform: scale(1.2);
+        transition: transform 1s linear;
+    }
+    
+    .photo-frame:hover .des h3 {
+        text-align: center;
+        color: indigo;
+        background: chocolate;
+    }
+    
+    .photo-frame:hover .des p {
+        color: ivory;
+        text-align: center;
+        padding: 5px; */
